@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Madimi+One&display=swap');
 
 *{
     margin: 0;
@@ -8,9 +7,41 @@
 }
 
 body{
+    display: flex;
     position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    transition: background 1s;
 }
-
+.button{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 190vh;
+    top: 5%;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #39a2db59;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color:#5B0B9B ;
+    transition: left 1s;
+}
+.ball-move{
+    left: calc(100% - 40px);
+}
+.dark{
+    background-color: black;
+}
 
 .title{
     font-family: 'Inter';
@@ -20,7 +51,7 @@ body{
     align-items: center;
     display: flex;
     position: relative;
-    left: 50%;
+    left: 45%;
 }
 
 
@@ -41,10 +72,11 @@ body{
     justify-content: center;
     align-items: center;
     display: grid;
-    margin-top: 30vh;
+    margin-top: 25vh;
     position: relative;
-    left: 55%;
+    left: 45%;
     padding-bottom: 20vh;
+    cursor: pointer;
     
 }
 
@@ -71,23 +103,9 @@ body{
     bottom: 10%;
 }
 
-.en{
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    margin-top: 1vh;
-    position: relative;
-    left: 55%;
-}
 
-.en > input{
-    display: grid;
-    width: 47vw;
-    height: 5vh;
-    outline: 0;
-    background-color: none;
-    border: none;
-}
+
+
 .lineblack2{
     display: grid;
     width: 50vw;
@@ -99,35 +117,65 @@ body{
     display: flex;
 }
 
-.rodape{
+.traduzir{
+    width: 40vh;
+    height: 5vh;
     position: relative;
-    left: 60%;
-    top: 30%;
-    align-items: center;
-   justify-content: center;
-   display: flex;
-
+    display: flex;
+    right: 27vh;
+    top: 90%;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
-.botao{
+.traduzir > h1{
+    display: flex;
     position: relative;
-    left: 60%;
-    top: 30%;
+    left: 35%;
+    top: 10%;
+}
+
+.btnVoz{
+
+    justify-content: center;
     align-items: center;
-   justify-content: center;
-   display: flex;
-   height: 5vh;
-   width: 15vh;
-   margin-top: 3vh;
-   background-color: #5B0B9B;
-   border-radius: 5px;
-   cursor: pointer;
-   border: none;
+    display: grid;
+    margin-top: 1vh;
+    position: relative;
+    left: 45%;
+    bottom: 5vh;
+    cursor: pointer;
+    
 }
 
-.botao p{
-    font-size: 20px;
-    color: aliceblue;
-    font-family: 'Madimi One';
+.btnVoz {
+    display: grid;
+    width: 47vw;
+    height: 5vh;
+    outline: 0;
+    background-color: none;
+    border: none;
 }
 
+.en > input{
+    display: grid;
+    width: 47vw;
+    height: 5vh;
+    outline: 0;
+    background-color: none;
+    border: none;
+}
+
+.en{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-top: 1vh;
+    position: relative;
+    left: 45%;
+    bottom: 5vh;
+    cursor: pointer;
+    
+}

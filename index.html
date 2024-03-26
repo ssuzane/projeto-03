@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/iconfav.svg" type="image/x-icon">
     <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
     <title>TopLingo</title>
+
 </head>
+    
 <body>
 
     <header>
+
         <div class="faixa"></div>
+        <div class="button">
+            <div class="ball"></div>
+        </div>
+        <script>
+            document.querySelector('.ball').addEventListener('click', (e)=>{
+                e.target.classList.toggle('ball-move');
+                document.body.classList.toggle('dark');
+            });
+        </script>
         
     </header>
 
@@ -37,14 +51,18 @@
         </div>
 
 
-         
-       
+        <div class="btnVoz">
+            <button id="btnfalarVoz"><img src="./img/ligado.png" alt="Microfone ligado"></button>
+            <button id="btnpararVoz"><img src="./img/desligado.png" alt="Microfone desligado"></button>
+            
+        </div>
 
     </main>
 
     <footer>
-        <button class="botao" id="traduz"><p>tradução</p></button>
-        <p class="rodape">Gabriel e Suzane</p>
+        <button class="traduzir">
+            <H1>Traduzir</H1>
+        </button>
     </footer>
 </body>
 </html>
